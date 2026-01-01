@@ -1,0 +1,26 @@
+// n = 4
+//       * 
+//     * * * 
+//   *   *   * 
+// * * * * * * *
+//   *   *   *   
+//     * * *
+//       *
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter length: ";
+    cin>>n;
+    int m = 2*n-1;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<m;j++){
+            // for star printing
+            if(i == m/2 or j == m/2 or abs(i-j) == m/2 or i+j == 3*(n-1) or i+j == m/2) cout<<"* ";
+            // for space printing
+            else cout<<"  ";
+        }
+        cout<<endl;
+    }
+}

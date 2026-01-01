@@ -1,0 +1,22 @@
+Very Important Funda for cracking each questions of Recursion:-
+
+Break problem into one step smaller problem.
+Eg1: sum(n) : sum of n natural numbers.
+sum(n) = n + sum(n-1)
+
+Eg2: fac(n) : factorial of number n.
+fac(n) = n * fac(n-1)
+
+Eg3: pow(a,b) : a raised to the power b.
+pow(a,b) = a * pow(a,b-1)
+
+Just add breaking condition for base cases.
+
+Breaking Condition
+Eg1: if(n==0) return 0;
+
+Eg2: if(n==0) return 1;
+
+Eg3: if(b==0) return 1;
+
+** Every Node is traversed twice: While going & while coming!

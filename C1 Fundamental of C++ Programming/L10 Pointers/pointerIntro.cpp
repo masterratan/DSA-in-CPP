@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int x = 4;
+    int* p = &x;
+    // both will give same address of the variable
+    cout<<&x<<endl; // 0x61ff08
+    cout<<p; // 0x61ff08
+}
